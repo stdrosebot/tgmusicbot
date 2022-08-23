@@ -107,7 +107,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     draw.text((190, 630), f"Views: {views}", (255, 255, 255), font=font)
     draw.text(
         (190, 670),
-        f"Powered By: Aditya Halder (@AdityaHalder)",
+        f"Powered By: 𝐒𝐓𝐃 𝐊𝐈𝐍𝐆 (@STD_KING)",
         (255, 255, 255),
         font=font,
     )
@@ -127,7 +127,7 @@ async def play(_, message: Message):
     global que
     global useer
     await message.delete()
-    lel = await message.reply("**🔎 𝐒𝐞𝐚𝐫𝐜𝐡𝐢𝐧𝐠 ...**")
+    lel = await message.reply("**🔎 ꜱᴇᴀʀᴄʜɪɴɢ ʏᴏᴜʀ ꜱᴏɴɢ ᴘʟᴇᴀꜱᴇ ᴡᴀɪᴛ ...**")
 
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
@@ -267,7 +267,7 @@ async def play(_, message: Message):
 
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://te.legra.ph/file/ed6920a2f0ab5af3fd55d.png"
+            thumb_name = "https://telegra.ph/file/3d87d8e87185261d6bdff.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -308,7 +308,7 @@ async def play(_, message: Message):
             return await lel.edit(
                 "**🤖 𝐆𝐢𝐯𝐞 🙃 𝐌𝐮𝐬𝐢𝐜 💿 𝐍𝐚𝐦𝐞 😍\n💞 𝐓𝐨 🔊 𝐏𝐥𝐚𝐲 🥀 𝐒𝐨𝐧𝐠 🌷...**"
             )
-        await lel.edit("**🔄 𝐏𝐫𝐨𝐜𝐞𝐬𝐬𝐢𝐧𝐠 ...**")
+        await lel.edit("**🔄 ᴘʀᴏᴄᴇꜱꜱɪɴɢ ...**")
         query = message.text.split(None, 1)[1]
         # print(query)
         try:
@@ -396,7 +396,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="**💥 𝐌𝐮𝐬𝐢𝐜 🌺 𝐑𝐨𝐛𝐨𝐭 🎸 𝐍𝐨𝐰 💞\n🔊 𝐏𝐥𝐚𝐲𝐢𝐧𝐠 😍 𝐎𝐏 🥀 ...**".format(),
+            caption="**💥 ʏᴏᴜʀ ᴍᴜꜱɪᴄ ꜱᴛᴀʀᴛ 🎸ɴᴏᴡ 💞\n🔊 ᴘʟᴀʏɪɴɢ 😍 ᴏᴘ 🥀 ...**".format(),
            )
 
     os.remove("final.png")
